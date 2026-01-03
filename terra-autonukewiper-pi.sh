@@ -1,11 +1,18 @@
 #!/bin/bash
 #####################################
-## TeRRaDude Auto NukeWiper v1.0
-##
-## Alternatief for psxc-nukewipe that doenst work on Pi systems
-##
-## Setup Cronjob if needed:  0 6 * * *        /glftpd/bin/terra-nukewiper.sh >/dev/null 2>&1
-##
+# TeRRaDude Auto NukeWiper v1.0
+#
+# Alternatief for psxc-nukewipe that doenst work on Pi systems
+#
+# Setup Cronjob if needed:  0 6 * * *        /glftpd/bin/terra-nukewiper.sh >/dev/null 2>&1
+#
+#  Note:
+#   Please take note that these scripts come without instructions on how to set
+#   them up, it is sole responsibility of the end user to understand the scripts
+#   function before executing them. If you do not know how to execute them, then
+#   please don't use them. They come with no warranty should any damage happen due
+#   to the improper settings and execution of these scripts (missing data, etc).
+#
 #####################################
 ############# SETUP #################
 #####################################
@@ -74,7 +81,5 @@ done
 
 # Log the end of the script execution
 echo "$(date '+%Y-%m-%d %H:%M:%S') - Cleanup completed" >> "$LOG_FILE"
-
 # EOF
-# !!!+++ This Script Comes Without any Support +++!!!
-# ./Just enjoy it.
+
